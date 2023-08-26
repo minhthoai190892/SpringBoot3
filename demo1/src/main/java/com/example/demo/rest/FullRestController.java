@@ -9,6 +9,10 @@ public class FullRestController {
 	public String sayHello() {
 		return "Hello Spring boot";
 	}
+	@GetMapping("/workout")
+	public String getDailyWorkout() {
+		return "Run a hard 5k";
+	}
 }
 
 
