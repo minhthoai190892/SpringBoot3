@@ -19,6 +19,16 @@
 		<br>
 		Last Name: <input type="text" th:field="*{lastName}">
 		<span th:if="${#fields.hasErrors('lastName')}" th:errors="*{lastName}" class="error"></span>
+		<br>
+		Free Passes: <input type="text" th:field="*{freePassed}">
+		<span th:if="${#fields.hasErrors('freePassed')}" th:errors="*{freePassed}" class="error"></span>
+		<br>
+		Postal COde: <input type="text" th:field="*{postalCode}">
+		<span th:if="${#fields.hasErrors('postalCode')}" th:errors="*{postalCode}" class="error"></span>
+		<br>
+		Course Code: <input type="text" th:field="*{courseCode}">
+		<span th:if="${#fields.hasErrors('courseCode')}" th:errors="*{courseCode}" class="error"></span>
+		<br>
 		<input type="submit" value="submit">
 	</form>
 </body>

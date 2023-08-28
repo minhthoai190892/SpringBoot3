@@ -1,0 +1,13 @@
+package com.example.demo.repository;
+
+import java.util.List;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
+
+import com.example.demo.entity.Student;
+
+public interface StudentRepository extends JpaRepository<Student, Integer> {
+	@Query("select s from Student s where firstName like %?1% order by id asc" )
+	public List<Student> findAllSearch(String keyword);
+}
