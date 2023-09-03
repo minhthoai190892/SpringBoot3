@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th=" http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>[[${pageTitle}]]</h1>
+	<!-- <p>
+		User: <span sec:authentication="principal.username"></span>
+		<br>
+		Role(s):<span sec:authentication="principal.authorities"></span>
+	</p> -->
+	<form th:action="@{/logout}" method="post">
+		<input type="submit" value="logout">
+	</form>
+</body>
+</html>
