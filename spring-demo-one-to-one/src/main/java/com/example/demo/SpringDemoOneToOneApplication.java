@@ -45,7 +45,7 @@ public class SpringDemoOneToOneApplication {
 //			addStudentAndCourse(instructorService);
 //			findStudentAndCourseByStudentId(instructorService);
 //			deleteCourseAndStudent(instructorService);
-			deleteStudentAndCourse(instructorService);
+//			deleteStudentAndCourse(instructorService);
 		};
 	}
 

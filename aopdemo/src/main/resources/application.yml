@@ -1,0 +1,8 @@
+#turn off the spring boot banner
+spring:
+  main:
+    banner-mode: 'off'
+#reduce lgooging level. set logging level to warn
+logging:
+  level:
+    root: warn
